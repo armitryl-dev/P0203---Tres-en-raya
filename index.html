@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de las Tres en raya</title>
+    <link rel="stylesheet"  href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <aside class="sidebar">
+            <div class="player player1">
+                <img src="./imgs/bmwlogo.png" alt="Jugador 1" class="player-logo">
+                <span>Jugador 1</span>
+            </div>
+            <div class="player player2">
+                <img src="./imgs/mercedeslogo.png" alt="Jugador 2" class="player-logo">
+                <span>Jugador 2</span>
+            </div>
+        </aside>
+
+        <main>
+            <h1>Tres en Raya</h1>
+            <div id="status" class="status-bar"><img id="currentPlayerLogo" src="./imgs/bmwlogo.png" alt="Turno" class="status-logo"></div>
+            <div class="game-board" id="board"></div>
+            <div class="controls">
+                <button id="reset">Reiniciar</button>
+                <button id="exit">Salir</button>
+            </div>
+        </main> 
+    </div>
+    <script src="app.js"></script>
+    
+</body>
+</html>

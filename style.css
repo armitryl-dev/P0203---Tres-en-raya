@@ -1,0 +1,137 @@
+body {
+  font-family: 'Exo2 Regular', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+}
+
+@font-face {
+  font-family: 'Exo2 Regular'; /* Nombre que le das a la fuente */
+  src: url('fonts/Exo2-Regular.ttf') format('truetype'); /* Añade otros formatos si es necesario */
+  font-weight: normal; /* o bold, etc. según necesites */
+  font-style: normal; /* o italic, etc. */
+}
+
+/* Contenedor general */
+.container {
+  display: flex;
+  width: 80%;
+  height: 80%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Barra lateral para los jugadores */
+.sidebar {
+  width: 20%;
+  background-color: #e6e1eb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.player {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.player-logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Contenido principal */
+main {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+/* Barra de estado */
+.status-bar {
+  background-color: #7e39c1;
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.status-logo {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+}
+
+/* Tablero del juego */
+.game-board {
+  display: grid;
+  grid-template-columns: repeat(3, 150px);
+  grid-template-rows: repeat(3, 150px);
+  gap: 10px;
+}
+
+.cell {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  border: 4px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cell img {
+  width: 100px;
+  height: 100px;
+}
+
+.cell:hover {
+  background-color: #b0b0b0;
+}
+
+/* Botones de control */
+.controls {
+  margin-top: 20px;
+}
+
+button {
+  font-family: 'Exo2 Regular';
+  margin: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #7e39c1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #5d2f92;
+}
